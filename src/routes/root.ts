@@ -1,6 +1,6 @@
 import express from 'express';
-//import { produtores } from '../controllers/produtoresController';
+import { verifyController } from '../controllers/verify-controller';
 const router = express.Router();
 
-// router.get('/produtores', produtores);
+router.get('/verify', verifyController);
 module.exports = router;
