@@ -1,0 +1,23 @@
+{
+  "name": "brain-agriculture-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha teste/teste.js",
+    "start": "node index.ts",
+    "dev": "nodemon --exec ts-node index.ts"
+  },
+  "author": "Aron Jasper Maziero",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mocha": "^10.4.0",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
