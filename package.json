@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
+    "build": "tsc",
     "test": "mocha teste/teste.js",
     "start": "ts-node index.ts",
     "dev": "nodemon --exec ts-node index.ts"
