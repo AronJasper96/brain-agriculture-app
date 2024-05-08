@@ -16,7 +16,7 @@ export async function createRegister( req: Request, res: Response) {
             return;
         }
         const exampleRegister = await createService(isValid);
-        res.status(200).json({ 'Criado com sucesso!': exampleRegister });
+        res.status(200).json('Criado com sucesso!');
     } catch (error) { 
         console.error(error);
         return res.status(500).json({ error: 'Internal Server Error' });
@@ -32,7 +32,7 @@ export async function updateRegister( req: Request, res: Response) {
             return;
         }
        const exampleRegister = await updateService(isValid);
-       res.status(200).json(exampleRegister);
+       res.status(200).json('Atualizado com sucesso!');
     } catch (error) { 
         console.error(error);
         return res.status(500).json({ error: 'Internal Server Error' });
@@ -42,7 +42,7 @@ export async function updateRegister( req: Request, res: Response) {
 export async function deleteRegister( req: Request, res: Response) {
     try {
        const exampleRegister = await deleteService(req.body);
-       res.status(200).json(exampleRegister);
+       res.status(200).json('Registro deletado com sucesso!');
     } catch (error) {
         console.error(error);
         return res.status(500).json({ error: 'Internal Server Error' });
