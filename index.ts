@@ -1,6 +1,6 @@
 import 'dotenv/config';
 import expressServer from './src/express-server';
-
+//import { AppDataSource } from './src/utils/db/connection';
 /**
  * Initializes the application by starting the Express server and populating the film table.
  *
@@ -16,6 +16,13 @@ const init = async () =>{
   } catch (error) {
     console.error(error);
   }
+
+  // try {
+  //   await AppDataSource.initialize();
+  //   console.log("DataBase Connection Success");
+  // } catch (error) {
+  //   console.log("DataBase Connection Error: ", error);
+  // }
 };
 
 init();
